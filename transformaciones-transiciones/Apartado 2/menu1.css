@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    list-style-type: none;
+    height: 70px;
+    background-color: black;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    width: 180px;
+    text-align: center;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.pri:hover{
+    background-color: white;
+    color: black;
+    border-radius: 7px;
+}
+
+.pri{
+    margin: 5px;
+}
+
+nav li{
+    float: left;
+    position: relative;
+    padding: 20px;
+}
+
+nav li a{
+    color: var(--letra);
+    text-decoration: none;
+    padding-bottom: 30px;
+}
+
+/*Submenu*/
+
+nav ul li:hover > ul{
+    display: block;
+    color: black;
+    background-color: #D8D8D8;
+    display: grid;
+    grid-template:
+        "cel1 cel2" 1fr
+        "cel3 cel4" 1fr
+        "cel5 cel6" 1fr 
+        "cel7 cel8" 1fr/
+         1fr  1fr;
+    column-gap: 1px;
+    text-align: justify;
+}
+
+h2{
+    padding: 10px;
+}
+
+.sub{
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 70px;
+    border-radius: 7px;
+    background-color: white;
+    font-size:small;
+    font-weight: 100;
+    box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.2);
+}
+
+.sub-li{
+    background-color: white;
+    color: black;
+    width: 300px;
+    text-align: justify;
+}
+
+.sub-li a:hover{
+    color: #666666;
+    padding-left: 10px;
+}
+
+img{
+    width: 50px;
+    height: 40px;
+    margin: 10px;
+}
+
