@@ -1,0 +1,92 @@
+/* Estilos generales */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+header{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+}
+
+nav li a{
+    color: var(--letra);
+    text-decoration: none;
+    padding-bottom: 30px;
+}
+
+/* Menú principal */
+.aside{
+    float: left;
+    background-color: black; 
+    width: 150px; 
+    height: 89.9vh;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+  
+.aside ul{
+    list-style: none;
+}
+  
+/* Estilo para elementos principales */
+.pri{
+    position: relative; /* Importante para que el submenu se posicione relativo a este li */
+    transition: 0.5s;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+    text-decoration: none;
+}
+  
+/* Efecto hover en elemento principal */
+.pri:hover{
+    background-color: white;
+    color: black;
+}
+  
+/* Submenú oculto por defecto */
+.sub{
+    display: none;
+    position: absolute;
+    left: 100%;  /* Ubica el submenu a la derecha */
+    top: 0;
+    min-width: 150px;
+    border: 1px solid white;
+    font-size: large;
+    font-weight: 100;
+    box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.2);
+}
+  
+/* Mostrar submenú al pasar el cursor sobre el li padre */
+.pri:hover > .sub{
+    display: block;
+}
+  
+/* Estilo para los items del submenú */
+.sub-li{
+    background-color: black;
+    color: gray;
+    text-align: justify;
+    padding: 10px;
+}
+  
+.sub-li a{
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+  
+.sub-li a:hover{
+    color: white;
+    font-size: larger;
+
+}
+  
